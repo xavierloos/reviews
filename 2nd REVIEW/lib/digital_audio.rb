@@ -1,0 +1,3 @@
+class DigitalAudio
+  
+end
