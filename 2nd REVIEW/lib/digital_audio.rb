@@ -8,10 +8,12 @@ class DigitalAudio
   end
 
   def secuence(i)
-    if i >= DEFAULT  && i <= @upper_limit
-      @secArray << i
-    else i <= DEFAULT
+    if i > @upper_limit
+      @secArray << 1000
+    elsif i <= DEFAULT
       @secArray << DEFAULT
+    else
+      @secArray << i
     end
   end
 end

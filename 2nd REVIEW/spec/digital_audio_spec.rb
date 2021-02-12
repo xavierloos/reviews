@@ -18,5 +18,10 @@ RSpec.describe DigitalAudio do
       da.secuence(10)
       expect(da.secArray).to eq [40]
     end
+    it "returns 1000 if upper limit reached " do
+      expect(da.secArray).to eq []
+      da.secuence(1500)
+      expect(da.secArray).to eq [1000]
+    end
   end
 end
